@@ -1,0 +1,10 @@
+#
+# This is the main task for running the Simu to crash Plastik
+#
+---
+- hosts: test
+  
+  tasks:
+
+  - name: Start Simu
+    action: shell cd src/alligator/trunk/simu/bin ; ./simu.elf --conf ../etc/test.cfg
